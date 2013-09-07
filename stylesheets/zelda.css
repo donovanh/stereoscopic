@@ -1,0 +1,345 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* Mixins to extend what Compass provides */
+body {
+  background: black;
+  -webkit-animation: animate-background 6s linear;
+  -moz-animation: animate-background 6s linear;
+  -o-animation: animate-background 6s linear;
+  -ms-animation: animate-background 6s linear;
+  animation: animate-background 6s linear; }
+
+.left, .right {
+  width: 50%;
+  height: 100%;
+  overflow: hidden; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.left .stage {
+  -webkit-perspective-origin: 62% 190px;
+  -moz-perspective-origin: 62% 190px;
+  -ms-perspective-origin: 62% 190px;
+  -o-perspective-origin: 62% 190px;
+  perspective-origin: 62% 190px; }
+
+.right .stage {
+  -webkit-perspective-origin: 38% 190px;
+  -moz-perspective-origin: 38% 190px;
+  -ms-perspective-origin: 38% 190px;
+  -o-perspective-origin: 38% 190px;
+  perspective-origin: 38% 190px; }
+
+.zelda-container {
+  width: 768px;
+  height: 432px;
+  margin: 100px auto;
+  position: relative; }
+
+.background-holder {
+  position: absolute;
+  width: 768px;
+  height: 432px;
+  background: url(../images/bg.png);
+  -webkit-animation: animate-background-picture 6s linear forwards;
+  -moz-animation: animate-background-picture 6s linear forwards;
+  -o-animation: animate-background-picture 6s linear forwards;
+  -ms-animation: animate-background-picture 6s linear forwards;
+  animation: animate-background-picture 6s linear forwards; }
+
+.zeldatext {
+  position: absolute;
+  top: 80px;
+  left: -100px;
+  width: 505px;
+  height: 220px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: scale(1) translateZ(100px);
+  -moz-transform: scale(1) translateZ(100px);
+  -ms-transform: scale(1) translateZ(100px);
+  -o-transform: scale(1) translateZ(100px);
+  transform: scale(1) translateZ(100px); }
+  .zeldatext h1 {
+    top: 10px;
+    font-size: 180px;
+    font-family: "EB Garamond";
+    padding-left: 80px;
+    color: #8b3536;
+    -webkit-text-fill-color: #b62f22;
+    -moz-text-fill-color: #b62f22;
+    -o-text-fill-color: #b62f22;
+    -ms-text-fill-color: #b62f22;
+    text-fill-color: #b62f22;
+    -webkit-stroke-fill-color: #8b3536;
+    -moz-stroke-fill-color: #8b3536;
+    -o-stroke-fill-color: #8b3536;
+    -ms-stroke-fill-color: #8b3536;
+    stroke-fill-color: #8b3536;
+    -webkit-text-stroke-width: 2px;
+    -moz-text-stroke-width: 2px;
+    -o-text-stroke-width: 2px;
+    -ms-text-stroke-width: 2px;
+    text-stroke-width: 2px;
+    letter-spacing: -5px; }
+    .zeldatext h1 sup {
+      position: absolute;
+      top: -50px;
+      left: -80px;
+      font-size: 280px; }
+    .zeldatext h1 span.closer {
+      letter-spacing: -28px; }
+  .zeldatext h2, .zeldatext h3 {
+    position: absolute;
+    text-transform: uppercase;
+    font-family: "Old Standard TT";
+    color: #eeeeee;
+    font-size: 40px;
+    -webkit-text-fill-color: #eeeeee;
+    -moz-text-fill-color: #eeeeee;
+    -o-text-fill-color: #eeeeee;
+    -ms-text-fill-color: #eeeeee;
+    text-fill-color: #eeeeee;
+    -webkit-stroke-fill-color: #8b3536;
+    -moz-stroke-fill-color: #8b3536;
+    -o-stroke-fill-color: #8b3536;
+    -ms-stroke-fill-color: #8b3536;
+    stroke-fill-color: #8b3536;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-text-stroke-width: 0.2px;
+    -o-text-stroke-width: 0.2px;
+    -ms-text-stroke-width: 0.2px;
+    text-stroke-width: 0.2px;
+    text-shadow: 0 0 2px black; }
+  .zeldatext h2 {
+    top: -10px;
+    left: 100px; }
+  .zeldatext h3 {
+    top: 170px;
+    left: 100px;
+    width: 500px; }
+    .zeldatext h3 a {
+      text-decoration: none;
+      color: #eeeeee;
+      -webkit-text-fill-color: #eeeeee;
+      -moz-text-fill-color: #eeeeee;
+      -o-text-fill-color: #eeeeee;
+      -ms-text-fill-color: #eeeeee;
+      text-fill-color: #eeeeee; }
+
+.stage {
+  width: 300px;
+  height: 300px;
+  left: 220px;
+  top: 50px;
+  position: absolute;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -ms-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px; }
+  .stage .triangle {
+    position: absolute;
+    top: 0;
+    left: 75px;
+    width: 150px;
+    height: 150px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 75px 50%;
+    -moz-transform-origin: 75px 50%;
+    -ms-transform-origin: 75px 50%;
+    -o-transform-origin: 75px 50%;
+    transform-origin: 75px 50%; }
+    .stage .triangle.one {
+      -webkit-animation: rotate 5s infinite linear, introduce-1 5s linear;
+      -moz-animation: rotate 5s infinite linear, introduce-1 5s linear;
+      -o-animation: rotate 5s infinite linear, introduce-1 5s linear;
+      -ms-animation: rotate 5s infinite linear, introduce-1 5s linear;
+      animation: rotate 5s infinite linear, introduce-1 5s linear; }
+    .stage .triangle.two {
+      top: 150px;
+      left: 0;
+      -webkit-animation: rotate 5s infinite linear, introduce-2 5s linear;
+      -moz-animation: rotate 5s infinite linear, introduce-2 5s linear;
+      -o-animation: rotate 5s infinite linear, introduce-2 5s linear;
+      -ms-animation: rotate 5s infinite linear, introduce-2 5s linear;
+      animation: rotate 5s infinite linear, introduce-2 5s linear; }
+    .stage .triangle.three {
+      top: 150px;
+      left: 150px;
+      -webkit-animation: rotate 5s infinite linear, introduce-3 5s linear;
+      -moz-animation: rotate 5s infinite linear, introduce-3 5s linear;
+      -o-animation: rotate 5s infinite linear, introduce-3 5s linear;
+      -ms-animation: rotate 5s infinite linear, introduce-3 5s linear;
+      animation: rotate 5s infinite linear, introduce-3 5s linear; }
+    .stage .triangle figure {
+      display: block;
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+      -o-backface-visibility: hidden;
+      backface-visibility: hidden; }
+      .stage .triangle figure.front {
+        width: 0;
+        height: 0;
+        border-left: 75px solid transparent;
+        border-right: 75px solid transparent;
+        border-bottom: 150px solid #ffe403;
+        -webkit-transform: translateZ(20px);
+        -moz-transform: translateZ(20px);
+        -ms-transform: translateZ(20px);
+        -o-transform: translateZ(20px);
+        transform: translateZ(20px); }
+      .stage .triangle figure.back {
+        width: 0;
+        height: 0;
+        border-left: 75px solid transparent;
+        border-right: 75px solid transparent;
+        border-bottom: 150px solid #ffe403;
+        -webkit-transform: rotateY(180deg) translateZ(20px);
+        -moz-transform: rotateY(180deg) translateZ(20px);
+        -ms-transform: rotateY(180deg) translateZ(20px);
+        -o-transform: rotateY(180deg) translateZ(20px);
+        transform: rotateY(180deg) translateZ(20px); }
+      .stage .triangle figure.side1 {
+        content: " ";
+        display: block;
+        position: absolute;
+        height: 168px;
+        width: 40px;
+        background-color: #ffd200;
+        -webkit-transform: translateY(-9px) translateX(18px) rotateY(-90deg) rotateX(26.5deg);
+        -moz-transform: translateY(-9px) translateX(18px) rotateY(-90deg) rotateX(26.5deg);
+        -ms-transform: translateY(-9px) translateX(18px) rotateY(-90deg) rotateX(26.5deg);
+        -o-transform: translateY(-9px) translateX(18px) rotateY(-90deg) rotateX(26.5deg);
+        transform: translateY(-9px) translateX(18px) rotateY(-90deg) rotateX(26.5deg); }
+      .stage .triangle figure.side2 {
+        content: " ";
+        display: block;
+        position: absolute;
+        height: 168px;
+        width: 40px;
+        background-color: #ffd200;
+        -webkit-transform: translateY(-9px) translateX(92px) rotateY(90deg) rotateX(26.5deg);
+        -moz-transform: translateY(-9px) translateX(92px) rotateY(90deg) rotateX(26.5deg);
+        -ms-transform: translateY(-9px) translateX(92px) rotateY(90deg) rotateX(26.5deg);
+        -o-transform: translateY(-9px) translateX(92px) rotateY(90deg) rotateX(26.5deg);
+        transform: translateY(-9px) translateX(92px) rotateY(90deg) rotateX(26.5deg); }
+      .stage .triangle figure.side3 {
+        content: " ";
+        background-color: #ffd200;
+        width: 150px;
+        height: 40px;
+        -webkit-transform: translateY(130px) rotateX(-90deg);
+        -moz-transform: translateY(130px) rotateX(-90deg);
+        -ms-transform: translateY(130px) rotateX(-90deg);
+        -o-transform: translateY(130px) rotateX(-90deg);
+        transform: translateY(130px) rotateX(-90deg); }
+
+@-moz-keyframes rotate {
+  0% {
+    -moz-transform: rotateY(0);
+    transform: rotateY(0); }
+
+  100% {
+    -moz-transform: rotateY(360deg);
+    transform: rotateY(360deg); } }
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0); }
+
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg); } }
+
+@-o-keyframes rotate {
+  0% {
+    -o-transform: rotateY(0);
+    transform: rotateY(0); }
+
+  100% {
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg); } }
+
+@-ms-keyframes rotate {
+  0% {
+    -ms-transform: rotateY(0);
+    transform: rotateY(0); }
+
+  100% {
+    -ms-transform: rotateY(360deg);
+    transform: rotateY(360deg); } }
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0); }
+
+  100% {
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg); } }
