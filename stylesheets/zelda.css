@@ -47,17 +47,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* Mixins to extend what Compass provides */
 body {
-  background: black;
-  -webkit-animation: animate-background 6s linear;
-  -moz-animation: animate-background 6s linear;
-  -o-animation: animate-background 6s linear;
-  -ms-animation: animate-background 6s linear;
-  animation: animate-background 6s linear; }
+  background: black; }
 
 .left, .right {
   width: 45%;
   height: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 .left {
   float: left; }
@@ -87,9 +83,16 @@ body {
 
 .background-holder {
   position: absolute;
-  width: 668px;
-  height: 432px;
-  background: url(../images/bg.png) no-repeat right; }
+  width: 768px;
+  height: 532px;
+  left: -280px;
+  top: -50px;
+  background: url(../images/bg.png) no-repeat;
+  -webkit-transform: translateZ(-250px);
+  -moz-transform: translateZ(-250px);
+  -ms-transform: translateZ(-250px);
+  -o-transform: translateZ(-250px);
+  transform: translateZ(-250px); }
 
 .zeldatext {
   position: absolute;
@@ -102,11 +105,11 @@ body {
   -ms-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-transform: scale(1) translateZ(100px);
-  -moz-transform: scale(1) translateZ(100px);
-  -ms-transform: scale(1) translateZ(100px);
-  -o-transform: scale(1) translateZ(100px);
-  transform: scale(1) translateZ(100px); }
+  -webkit-transform: translateZ(-100px);
+  -moz-transform: translateZ(-100px);
+  -ms-transform: translateZ(-100px);
+  -o-transform: translateZ(-100px);
+  transform: translateZ(-100px); }
   .zeldatext h1 {
     top: 10px;
     font-size: 180px;
@@ -174,10 +177,28 @@ body {
       -ms-text-fill-color: #eeeeee;
       text-fill-color: #eeeeee; }
 
+.description {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  margin-left: -125px;
+  width: 250px;
+  height: 120px;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  font-family: "Open Sans", Helvetica, Arial, Sans-serif; }
+  .description h1 {
+    font-weight: bold;
+    padding: 5px 0;
+    font-size: 22px; }
+  .description p {
+    line-height: 1.25em; }
+
 .stage {
   width: 300px;
   height: 300px;
-  left: 220px;
+  left: 180px;
   top: 50px;
   position: absolute;
   -webkit-perspective: 800px;
@@ -185,6 +206,17 @@ body {
   -ms-perspective: 800px;
   -o-perspective: 800px;
   perspective: 800px; }
+  .stage .triangles {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: translateZ(-190px);
+    -moz-transform: translateZ(-190px);
+    -ms-transform: translateZ(-190px);
+    -o-transform: translateZ(-190px);
+    transform: translateZ(-190px); }
   .stage .triangle {
     position: absolute;
     top: 0;
@@ -202,27 +234,27 @@ body {
     -o-transform-origin: 75px 50%;
     transform-origin: 75px 50%; }
     .stage .triangle.one {
-      -webkit-animation: rotate 5s infinite linear, introduce-1 5s linear;
-      -moz-animation: rotate 5s infinite linear, introduce-1 5s linear;
-      -o-animation: rotate 5s infinite linear, introduce-1 5s linear;
-      -ms-animation: rotate 5s infinite linear, introduce-1 5s linear;
-      animation: rotate 5s infinite linear, introduce-1 5s linear; }
+      -webkit-animation: rotate 5s infinite linear;
+      -moz-animation: rotate 5s infinite linear;
+      -o-animation: rotate 5s infinite linear;
+      -ms-animation: rotate 5s infinite linear;
+      animation: rotate 5s infinite linear; }
     .stage .triangle.two {
       top: 150px;
       left: 0;
-      -webkit-animation: rotate 5s infinite linear, introduce-2 5s linear;
-      -moz-animation: rotate 5s infinite linear, introduce-2 5s linear;
-      -o-animation: rotate 5s infinite linear, introduce-2 5s linear;
-      -ms-animation: rotate 5s infinite linear, introduce-2 5s linear;
-      animation: rotate 5s infinite linear, introduce-2 5s linear; }
+      -webkit-animation: rotate 5s infinite linear;
+      -moz-animation: rotate 5s infinite linear;
+      -o-animation: rotate 5s infinite linear;
+      -ms-animation: rotate 5s infinite linear;
+      animation: rotate 5s infinite linear; }
     .stage .triangle.three {
       top: 150px;
       left: 150px;
-      -webkit-animation: rotate 5s infinite linear, introduce-3 5s linear;
-      -moz-animation: rotate 5s infinite linear, introduce-3 5s linear;
-      -o-animation: rotate 5s infinite linear, introduce-3 5s linear;
-      -ms-animation: rotate 5s infinite linear, introduce-3 5s linear;
-      animation: rotate 5s infinite linear, introduce-3 5s linear; }
+      -webkit-animation: rotate 5s infinite linear;
+      -moz-animation: rotate 5s infinite linear;
+      -o-animation: rotate 5s infinite linear;
+      -ms-animation: rotate 5s infinite linear;
+      animation: rotate 5s infinite linear; }
     .stage .triangle figure {
       display: block;
       position: absolute;

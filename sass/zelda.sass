@@ -11,12 +11,12 @@ $borderColour: #fbb700
 
 body
   background: #000
-  @include animation(animate-background 6s linear)
 
 .left, .right
   width: 45%
   height: 100%
   overflow: hidden
+  position: relative
 
 .left
   float: left
@@ -38,9 +38,12 @@ body
   
 .background-holder
   position: absolute
-  width: 668px
-  height: 432px
-  background: url(../images/bg.png) no-repeat right
+  width: 768px
+  height: 532px
+  left: -280px
+  top: -50px
+  background: url(../images/bg.png) no-repeat
+  @include transform(translateZ(-250px))
 
 .zeldatext
   position: absolute
@@ -49,7 +52,7 @@ body
   width: 505px 
   height: 220px
   @include transform-style(preserve-3d)
-  @include transform(scale(1) translateZ(100px))
+  @include transform(translateZ(-100px))
 
   h1
     top: 10px
@@ -96,13 +99,37 @@ body
       color: #eee
       @include text-fill-color(#eee)
 
+.description
+  position: absolute
+  bottom: 60px
+  left: 50%
+  margin-left: -125px
+  width: 250px
+  height: 120px
+  padding: 10px
+  border-radius: 10px
+  background: rgba(255,255,255,0.2)
+  font-family: 'Open Sans', Helvetica, Arial, Sans-serif
+
+  h1
+    font-weight: bold
+    padding: 5px 0
+    font-size: 22px
+
+  p
+    line-height: 1.25em
+
 .stage
   width: 300px
   height: 300px
-  left: 220px
+  left: 180px
   top: 50px
   position: absolute
   @include perspective(800px)
+
+  .triangles
+    @include transform-style(preserve-3d)
+    @include transform(translateZ(-190px))
 
   .triangle
     position: absolute
@@ -114,17 +141,17 @@ body
     @include transform-origin(75px)
 
     &.one
-      @include animation(rotate $animationDuration infinite linear, introduce-1 5s linear)
+      @include animation(rotate $animationDuration infinite linear)
 
     &.two
       top: 150px
       left: 0
-      @include animation(rotate $animationDuration infinite linear, introduce-2 5s linear)
+      @include animation(rotate $animationDuration infinite linear)
 
     &.three
       top: 150px
       left: 150px
-      @include animation(rotate $animationDuration infinite linear, introduce-3 5s linear)
+      @include animation(rotate $animationDuration infinite linear)
 
     figure
       display: block
