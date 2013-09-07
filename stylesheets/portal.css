@@ -151,18 +151,18 @@ body {
   perspective-origin: 50% -1400px; }
 
 .left .container {
-  -webkit-perspective-origin: 45% -1400px;
-  -moz-perspective-origin: 45% -1400px;
-  -ms-perspective-origin: 45% -1400px;
-  -o-perspective-origin: 45% -1400px;
-  perspective-origin: 45% -1400px; }
+  -webkit-perspective-origin: 63.5% -1400px;
+  -moz-perspective-origin: 63.5% -1400px;
+  -ms-perspective-origin: 63.5% -1400px;
+  -o-perspective-origin: 63.5% -1400px;
+  perspective-origin: 63.5% -1400px; }
 
 .right .container {
-  -webkit-perspective-origin: 55% -1400px;
-  -moz-perspective-origin: 55% -1400px;
-  -ms-perspective-origin: 55% -1400px;
-  -o-perspective-origin: 55% -1400px;
-  perspective-origin: 55% -1400px; }
+  -webkit-perspective-origin: 36.5% -1400px;
+  -moz-perspective-origin: 36.5% -1400px;
+  -ms-perspective-origin: 36.5% -1400px;
+  -o-perspective-origin: 36.5% -1400px;
+  perspective-origin: 36.5% -1400px; }
 
 .stage {
   width: 460px;
