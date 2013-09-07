@@ -55,7 +55,7 @@ body {
   animation: animate-background 6s linear; }
 
 .left, .right {
-  width: 50%;
+  width: 45%;
   height: 100%;
   overflow: hidden; }
 
@@ -87,14 +87,9 @@ body {
 
 .background-holder {
   position: absolute;
-  width: 768px;
+  width: 668px;
   height: 432px;
-  background: url(../images/bg.png);
-  -webkit-animation: animate-background-picture 6s linear forwards;
-  -moz-animation: animate-background-picture 6s linear forwards;
-  -o-animation: animate-background-picture 6s linear forwards;
-  -ms-animation: animate-background-picture 6s linear forwards;
-  animation: animate-background-picture 6s linear forwards; }
+  background: url(../images/bg.png) no-repeat right; }
 
 .zeldatext {
   position: absolute;
