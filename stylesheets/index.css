@@ -48,10 +48,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* Mixins to extend what Compass provides */
 body {
   background-color: #eeeeee;
-  background: -moz-linear-gradient(#aaaaaa 0%, #dddddd 250px, #eeeeee 250px, #ffffff);
-  background: -o-linear-gradient(#aaaaaa 0%, #dddddd 250px, #eeeeee 250px, #ffffff);
-  background: -webkit-linear-gradient(#aaaaaa 0%, #dddddd 250px, #eeeeee 250px, #ffffff);
-  background: linear-gradient(#aaaaaa 0%, #dddddd 250px, #eeeeee 250px, #ffffff);
+  background: -moz-linear-gradient(#aaaaaa 0%, #dddddd 220px, #eeeeee 220px, #ffffff);
+  background: -o-linear-gradient(#aaaaaa 0%, #dddddd 220px, #eeeeee 220px, #ffffff);
+  background: -webkit-linear-gradient(#aaaaaa 0%, #dddddd 220px, #eeeeee 220px, #ffffff);
+  background: linear-gradient(#aaaaaa 0%, #dddddd 220px, #eeeeee 220px, #ffffff);
   font-family: "Orbitron", sans-serif; }
 
 /* Fallback code */
@@ -191,7 +191,7 @@ body {
     -moz-backface-visibility: visible;
     -webkit-backface-visibility: visible;
     backface-visibility: visible;
-    background-color: transparent;
+    background-color: #aaaaaa;
     -webkit-box-reflect: none; }
   .stage .left {
     -moz-transform: rotateY(-90deg) translateZ(100px);

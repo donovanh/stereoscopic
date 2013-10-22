@@ -8,7 +8,7 @@ $maxOpacity: 0.9
 
 body
   background-color: #eee
-  +background(linear-gradient(#aaa 0, #ddd 250px, #eee 250px, #fff))
+  +background(linear-gradient(#aaa 0, #ddd 220px, #eee 220px, #fff))
   font-family: 'Orbitron', sans-serif
 
 /* Fallback code */
@@ -120,7 +120,7 @@ body
     +transform(rotateX(-90deg) translateZ(100px))
     +box-shadow(0 10px 100px rgba(0,0,0,0.7))
     +backface-visibility(visible)
-    background-color: rgba(0,0,0,0)
+    background-color: #aaa
     -webkit-box-reflect: none
 
   .left
@@ -133,7 +133,7 @@ body
 
   .front
     +transform(translateZ(100px))
-    background-color: yellow
+    background-color: #ff0
 
 +keyframes(rotate)
   0%
