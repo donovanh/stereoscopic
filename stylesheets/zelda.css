@@ -62,17 +62,13 @@ body {
   float: right; }
 
 .left .stage {
-  -webkit-perspective-origin: 62% 190px;
   -moz-perspective-origin: 62% 190px;
-  -ms-perspective-origin: 62% 190px;
-  -o-perspective-origin: 62% 190px;
+  -webkit-perspective-origin: 62% 190px;
   perspective-origin: 62% 190px; }
 
 .right .stage {
-  -webkit-perspective-origin: 38% 190px;
   -moz-perspective-origin: 38% 190px;
-  -ms-perspective-origin: 38% 190px;
-  -o-perspective-origin: 38% 190px;
+  -webkit-perspective-origin: 38% 190px;
   perspective-origin: 38% 190px; }
 
 .zelda-container {
@@ -88,10 +84,10 @@ body {
   left: -280px;
   top: -50px;
   background: url(../images/bg.png) no-repeat;
-  -webkit-transform: translateZ(-250px);
   -moz-transform: translateZ(-250px);
   -ms-transform: translateZ(-250px);
   -o-transform: translateZ(-250px);
+  -webkit-transform: translateZ(-250px);
   transform: translateZ(-250px); }
 
 .zeldatext {
@@ -100,15 +96,13 @@ body {
   left: -100px;
   width: 505px;
   height: 220px;
-  -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-transform: translateZ(-100px);
   -moz-transform: translateZ(-100px);
   -ms-transform: translateZ(-100px);
   -o-transform: translateZ(-100px);
+  -webkit-transform: translateZ(-100px);
   transform: translateZ(-100px); }
   .zeldatext h1 {
     top: 10px;
@@ -201,21 +195,17 @@ body {
   left: 180px;
   top: 50px;
   position: absolute;
-  -webkit-perspective: 800px;
   -moz-perspective: 800px;
-  -ms-perspective: 800px;
-  -o-perspective: 800px;
+  -webkit-perspective: 800px;
   perspective: 800px; }
   .stage .triangles {
-    -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    -webkit-transform: translateZ(-190px);
     -moz-transform: translateZ(-190px);
     -ms-transform: translateZ(-190px);
     -o-transform: translateZ(-190px);
+    -webkit-transform: translateZ(-190px);
     transform: translateZ(-190px); }
   .stage .triangle {
     position: absolute;
@@ -223,45 +213,35 @@ body {
     left: 75px;
     width: 150px;
     height: 150px;
-    -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    -webkit-transform-origin: 75px 50%;
     -moz-transform-origin: 75px 50%;
     -ms-transform-origin: 75px 50%;
     -o-transform-origin: 75px 50%;
+    -webkit-transform-origin: 75px 50%;
     transform-origin: 75px 50%; }
     .stage .triangle.one {
-      -webkit-animation: rotate 5s infinite linear;
       -moz-animation: rotate 5s infinite linear;
-      -o-animation: rotate 5s infinite linear;
-      -ms-animation: rotate 5s infinite linear;
+      -webkit-animation: rotate 5s infinite linear;
       animation: rotate 5s infinite linear; }
     .stage .triangle.two {
       top: 150px;
       left: 0;
-      -webkit-animation: rotate 5s infinite linear;
       -moz-animation: rotate 5s infinite linear;
-      -o-animation: rotate 5s infinite linear;
-      -ms-animation: rotate 5s infinite linear;
+      -webkit-animation: rotate 5s infinite linear;
       animation: rotate 5s infinite linear; }
     .stage .triangle.three {
       top: 150px;
       left: 150px;
-      -webkit-animation: rotate 5s infinite linear;
       -moz-animation: rotate 5s infinite linear;
-      -o-animation: rotate 5s infinite linear;
-      -ms-animation: rotate 5s infinite linear;
+      -webkit-animation: rotate 5s infinite linear;
       animation: rotate 5s infinite linear; }
     .stage .triangle figure {
       display: block;
       position: absolute;
-      -webkit-backface-visibility: hidden;
       -moz-backface-visibility: hidden;
-      -ms-backface-visibility: hidden;
-      -o-backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
       backface-visibility: hidden; }
       .stage .triangle figure.front {
         width: 0;
@@ -269,10 +249,10 @@ body {
         border-left: 75px solid transparent;
         border-right: 75px solid transparent;
         border-bottom: 150px solid #ffe403;
-        -webkit-transform: translateZ(20px);
         -moz-transform: translateZ(20px);
         -ms-transform: translateZ(20px);
         -o-transform: translateZ(20px);
+        -webkit-transform: translateZ(20px);
         transform: translateZ(20px); }
       .stage .triangle figure.back {
         width: 0;
@@ -280,10 +260,10 @@ body {
         border-left: 75px solid transparent;
         border-right: 75px solid transparent;
         border-bottom: 150px solid #ffe403;
-        -webkit-transform: rotateY(180deg) translateZ(20px);
         -moz-transform: rotateY(180deg) translateZ(20px);
         -ms-transform: rotateY(180deg) translateZ(20px);
         -o-transform: rotateY(180deg) translateZ(20px);
+        -webkit-transform: rotateY(180deg) translateZ(20px);
         transform: rotateY(180deg) translateZ(20px); }
       .stage .triangle figure.side1 {
         content: " ";
@@ -292,10 +272,10 @@ body {
         height: 168px;
         width: 40px;
         background-color: #ffd200;
-        -webkit-transform: translateY(-9px) translateX(18px) rotateY(-90deg) rotateX(26.5deg);
         -moz-transform: translateY(-9px) translateX(18px) rotateY(-90deg) rotateX(26.5deg);
         -ms-transform: translateY(-9px) translateX(18px) rotateY(-90deg) rotateX(26.5deg);
         -o-transform: translateY(-9px) translateX(18px) rotateY(-90deg) rotateX(26.5deg);
+        -webkit-transform: translateY(-9px) translateX(18px) rotateY(-90deg) rotateX(26.5deg);
         transform: translateY(-9px) translateX(18px) rotateY(-90deg) rotateX(26.5deg); }
       .stage .triangle figure.side2 {
         content: " ";
@@ -304,69 +284,34 @@ body {
         height: 168px;
         width: 40px;
         background-color: #ffd200;
-        -webkit-transform: translateY(-9px) translateX(92px) rotateY(90deg) rotateX(26.5deg);
         -moz-transform: translateY(-9px) translateX(92px) rotateY(90deg) rotateX(26.5deg);
         -ms-transform: translateY(-9px) translateX(92px) rotateY(90deg) rotateX(26.5deg);
         -o-transform: translateY(-9px) translateX(92px) rotateY(90deg) rotateX(26.5deg);
+        -webkit-transform: translateY(-9px) translateX(92px) rotateY(90deg) rotateX(26.5deg);
         transform: translateY(-9px) translateX(92px) rotateY(90deg) rotateX(26.5deg); }
       .stage .triangle figure.side3 {
         content: " ";
         background-color: #ffd200;
         width: 150px;
         height: 40px;
-        -webkit-transform: translateY(130px) rotateX(-90deg);
         -moz-transform: translateY(130px) rotateX(-90deg);
         -ms-transform: translateY(130px) rotateX(-90deg);
         -o-transform: translateY(130px) rotateX(-90deg);
+        -webkit-transform: translateY(130px) rotateX(-90deg);
         transform: translateY(130px) rotateX(-90deg); }
 
-@-moz-keyframes rotate {
-  0% {
-    -moz-transform: rotateY(0);
-    transform: rotateY(0); }
-
-  100% {
-    -moz-transform: rotateY(360deg);
-    transform: rotateY(360deg); } }
-
+@-moz-keyframes rotate {}
 @-webkit-keyframes rotate {
   0% {
-    -webkit-transform: rotateY(0);
-    transform: rotateY(0); }
+    -webkit-transform: rotateY(0); }
 
   100% {
-    -webkit-transform: rotateY(360deg);
-    transform: rotateY(360deg); } }
-
-@-o-keyframes rotate {
-  0% {
-    -o-transform: rotateY(0);
-    transform: rotateY(0); }
-
-  100% {
-    -o-transform: rotateY(360deg);
-    transform: rotateY(360deg); } }
-
-@-ms-keyframes rotate {
-  0% {
-    -ms-transform: rotateY(0);
-    transform: rotateY(0); }
-
-  100% {
-    -ms-transform: rotateY(360deg);
-    transform: rotateY(360deg); } }
-
+    -webkit-transform: rotateY(360deg); } }
 @keyframes rotate {
   0% {
     -webkit-transform: rotateY(0);
-    -moz-transform: rotateY(0);
-    -ms-transform: rotateY(0);
-    -o-transform: rotateY(0);
     transform: rotateY(0); }
 
   100% {
     -webkit-transform: rotateY(360deg);
-    -moz-transform: rotateY(360deg);
-    -ms-transform: rotateY(360deg);
-    -o-transform: rotateY(360deg);
     transform: rotateY(360deg); } }

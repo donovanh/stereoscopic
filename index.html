@@ -2,6 +2,7 @@
   <head>
     <title>CSS Only Side-by-side Stereoscopy</title>
     <link href="stylesheets/index.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Orbitron:900' rel='stylesheet' type='text/css'>
     <script src="js/modernizr.js"></script>
   </head>
   <body>
@@ -9,20 +10,34 @@
     <div class="container">
       <div class="left">
         <div class="stage">
-          <div class="cube">
-            <figure class="back">S</figure>
-            <figure class="top"></figure>
-            <figure class="bottom"></figure>
-            <figure class="left">3D!</figure>
-            <figure class="right">S</figure>
-            <figure class="front">C</figure>
+          <div class="cube-container">
+            <div class="cube">
+              <figure class="back">S</figure>
+              <figure class="top"></figure>
+              <figure class="bottom"></figure>
+              <figure class="left">3D!</figure>
+              <figure class="right">S</figure>
+              <figure class="front">C</figure>
+            </div>
           </div>
         </div>
-        <div class="text"><h2><span>Now in</span>crosseye-o-vision!</h2>
       </div>
+
       <div class="right">
-        
+        <div class="stage">
+          <div class="cube-container">
+            <div class="cube">
+              <figure class="back">S</figure>
+              <figure class="top"></figure>
+              <figure class="bottom"></figure>
+              <figure class="left">3D!</figure>
+              <figure class="right">S</figure>
+              <figure class="front">C</figure>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <section class="credit">Read how it's done: <a href="http://hop.ie/blog/stereoscopic/">Stereoscopic CSS</a></section>
   </body>
 </html>
