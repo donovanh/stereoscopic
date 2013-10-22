@@ -1,0 +1,154 @@
+
+@import compass/reset
+@import compass/css3
+@import _mixins
+
+$animationDuration: 10s
+$maxOpacity: 0.9
+
+body
+  background-color: #eee
+  +background(linear-gradient(#aaa 0, #ddd 250px, #eee 250px, #fff))
+  font-family: 'Orbitron', sans-serif
+
+/* Fallback code */
+
+.stage
+  display: none
+
+.csstransforms3d .stage
+  display: block
+
+.fallback-stage
+  width: 100%
+  height: 600px
+  &:after
+    content: "Sorry, this experiment needs 3D support in the browser."
+
+.csstransforms3d .fallback-stage
+  display: none
+
+/* Cube */
+
+.container 
+  width: 960px
+  margin: 0 auto
+
+.left, .right
+  width: 50%
+  height: 100%
+  overflow: hidden
+
+.left
+  float: left
+
+.right
+  float: right
+
+.left .stage
+  +perspective-origin(63.5% -340px)
+
+.right .stage
+  +perspective-origin(36.5% -340px)
+
+.credit
+  text-align: center
+  color: #ccc
+  margin-top: -40px
+
+  a
+    color: #aaa
+
+.stage
+  width: 480px
+  height: 500px
+  margin: 10px auto
+  position: relative
+  +animation(introduceCube 1.5s ease-out)
+  +perspective(1600px)
+
+  .text-container
+    +perspective(1200px)
+
+  .cube
+    +transform-style(preserve-3d)
+    +transform-origin(100px)
+    +animation(rotate $animationDuration infinite linear)
+    position: absolute
+    top: 120px
+    left: 140px
+
+  figure
+    display: block
+    width: 200px
+    height: 200px
+    background-color: #eee
+    background-size: 100%
+    position: absolute
+    /* +backface-visibility(hidden)
+    font-size: 100px
+    text-align: center
+    line-height: 200px
+    color: #fff
+    opacity: 0.5
+
+    &:before, &:after
+      content: ""
+      display: block
+      position: absolute
+      width: 100%
+      height: 100%
+      opacity: 0
+
+    &:before
+      +background(radial-gradient(top left, rgba(0, 0, 0, 0.5), #000))
+      z-index: 10
+
+    &:after
+      +background(radial-gradient(top right, rgba(0, 0, 0, 0.5), #000))
+      z-index: 10
+
+  .back
+    +transform(rotateY(180deg) translateZ(100px))
+    background-color: #f00
+
+  .top
+    +transform(rotateX(90deg) translateZ(100px))
+    background-color: #ff7400
+
+  .bottom
+    +transform(rotateX(-90deg) translateZ(100px))
+    +box-shadow(0 10px 100px rgba(0,0,0,0.7))
+    +backface-visibility(visible)
+    background-color: rgba(0,0,0,0)
+    -webkit-box-reflect: none
+
+  .left
+    +transform(rotateY(-90deg) translateZ(100px))
+    background-color: #099
+
+  .right
+    +transform(rotateY(90deg) translateZ(100px))
+    background-color: #0c0
+
+  .front
+    +transform(translateZ(100px))
+    background-color: yellow
+
++keyframes(rotate)
+  0%
+    +transform(rotateY(0))
+  100%
+    +transform(rotateY(-360deg))
+
++keyframes(introduceCube)
+  0%
+    opacity: 0
+    top: -20px
+    +transform(scale(0.6))
+  20%
+    opacity: 1
+  100%
+    top: 0
+    +transform(scale(1))
+
