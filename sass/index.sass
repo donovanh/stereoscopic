@@ -74,24 +74,24 @@ body
     top: 120px
     left: 140px
 
-  figure
-    display: block
-    width: 200px
-    height: 200px
-    position: absolute
-    font-size: 100px
-    text-align: center
-    line-height: 200px
-    color: #fff
-    opacity: 0.5
-
-    &:before, &:after
-      content: ""
+    span
       display: block
+      width: 200px
+      height: 200px
       position: absolute
-      width: 100%
-      height: 100%
-      opacity: 0.2
+      font-size: 100px
+      text-align: center
+      line-height: 200px
+      color: #fff
+      opacity: 0.5
+
+      &:before, &:after
+        content: ""
+        display: block
+        position: absolute
+        width: 100%
+        height: 100%
+        opacity: 0.2
 
     &:before
       +background(radial-gradient(top left, rgba(0, 0, 0, 0.5), #000))
