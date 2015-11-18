@@ -1,3 +1,3 @@
 # Stereoscopic CSS
 
-Some examples as described in the [stereoscopic css article](http://hop.ie/blog/stereoscopic) on [hop.ie](http://hop.ie).
+Some examples as described in the [stereoscopic css article](https://cssanimation.rocks/stereoscopic) on [cssanimation.rocks](https://cssanimation.rocks).
